@@ -26,6 +26,9 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.asdsadsdasd.init.AsdsadsdasdModItems;
+import net.mcreator.asdsadsdasd.init.AsdsadsdasdModBlocks;
+
 import java.util.function.Supplier;
 import java.util.function.Function;
 import java.util.function.BiConsumer;
@@ -42,6 +45,8 @@ public class AsdsadsdasdMod {
 	public AsdsadsdasdMod() {
 
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+		AsdsadsdasdModBlocks.REGISTRY.register(bus);
+		AsdsadsdasdModItems.REGISTRY.register(bus);
 
 	}
 
